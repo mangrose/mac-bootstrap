@@ -26,9 +26,9 @@ osname=$(uname)
 export COMMANDLINE_TOOLS="/Library/Developer/CommandLineTools"
 export OLD_DOTFILES_BAK="${HOME}/old_dotfiles_bak"
 export DICTIONARY_DIR="${HOME}/Library/Spelling"
-export DOTFILES_REPO_URL="https://github.com/joshukraine/dotfiles.git"
+export DOTFILES_REPO_URL="https://github.com/mangrose/dotfiles.git"
 export DOTFILES_DIR="${HOME}/dotfiles"
-export BOOTSTRAP_REPO_URL="https://github.com/joshukraine/mac-bootstrap.git"
+export BOOTSTRAP_REPO_URL="https://github.com/mangrose/mac-bootstrap.git"
 export BOOTSTRAP_DIR="${HOME}/mac-bootstrap"
 
 PS3="> "
@@ -46,7 +46,7 @@ fi
 
 DEFAULT_BOOTSTRAP_VERSION="v5.1.5"
 DEFAULT_DOTFILES_BRANCH="master"
-DEFAULT_TIME_ZONE="Europe/Kiev"
+DEFAULT_TIME_ZONE="Europe/Stockholm"
 DEFAULT_NODEJS_VERSION="12.18.3"
 DEFAULT_RUBY_VERSION="2.7.1"
 
@@ -99,8 +99,6 @@ echo
 echo "*************************************************************************"
 echo "*******                                                           *******"
 echo "*******                 Welcome to Mac Bootstrap!                 *******"
-echo "*******                                                           *******"
-echo "*******                   https://jsua.co/macos                   *******"
 echo "*******                                                           *******"
 echo "*************************************************************************"
 echo
@@ -269,20 +267,20 @@ bootstrap_echo "Done!"
 # 5. Set up Tmuxinator (https://github.com/tmuxinator/tmuxinator)
 ################################################################################
 
-bootstrap_echo "Step 5: Setting up Tmuxinator..."
+#bootstrap_echo "Step 5: Setting up Tmuxinator..."
 
-if [ ! -d "${HOME}/.tmuxinator/" ]; then
-  mkdir "${HOME}/.tmuxinator"
-fi
+#if [ ! -d "${HOME}/.tmuxinator/" ]; then
+#  mkdir "${HOME}/.tmuxinator"
+#fi
 
-if [ "$DEFAULT_SHELL" == "zsh" ]; then
-  bootstrap_echo "Installing zsh completions..."
-  wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
-fi
+#if [ "$DEFAULT_SHELL" == "zsh" ]; then
+#  bootstrap_echo "Installing zsh completions..."
+#  wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
+#fi
 
-cp "${BOOTSTRAP_DIR}/lib/default.yml" "${HOME}/.tmuxinator/"
+#cp "${BOOTSTRAP_DIR}/lib/default.yml" "${HOME}/.tmuxinator/"
 
-bootstrap_echo "Done!"
+#bootstrap_echo "Done!"
 
 
 ################################################################################
@@ -293,11 +291,11 @@ bootstrap_echo "Done!"
 # * http://extensions.services.openoffice.org/en/project/ukrainian-dictionary
 ################################################################################
 
-bootstrap_echo "Step 6: Installing Ukrainian language utilities..."
+#bootstrap_echo "Step 6: Installing Ukrainian language utilities..."
 
-cp "$BOOTSTRAP_DIR"/lib/{hyph_uk.dic,uk_UA.aff,uk_UA.dic} "$DICTIONARY_DIR"
+#cp "$BOOTSTRAP_DIR"/lib/{hyph_uk.dic,uk_UA.aff,uk_UA.dic} "$DICTIONARY_DIR"
 
-bootstrap_echo "Done!"
+#bootstrap_echo "Done!"
 
 
 ################################################################################

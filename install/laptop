@@ -82,7 +82,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "puma/puma"
 tap "universal-ctags/universal-ctags"
 
 # Need to install openssl before libyaml
@@ -112,6 +111,7 @@ brew "git"
 brew "git-quick-stats"
 brew "gmp" # Vim dependency
 brew "gnupg" # asdf-nodejs dependency
+brew "go"
 brew "highlight"
 brew "htop"
 brew "httpie"
@@ -135,9 +135,7 @@ brew "pandoc"
 brew "perl"
 brew "pgcli"
 brew "postgresql", restart_service: true
-brew "puma/puma/puma-dev"
 brew "python"
-brew "ranger", link: false
 brew "readline"
 brew "ripgrep"
 brew "rlwrap"
@@ -161,8 +159,11 @@ brew "zsh"
 # homebrew-cask
 # https://github.com/caskroom/homebrew-cask
 cask "font-fira-code-nerd-font"
-cask "alacritty"
-cask "iterm2-beta"
+cask "google-backup-and-sync"
+cask "docker"
+cask "vmware-fusion"
+cask "lastpass"
+cask "robo-3t"
 EOF
 
 case "$DEFAULT_SHELL" in
@@ -226,7 +227,6 @@ gem install haml_lint
 gem install neovim
 gem install pry
 gem install rubocop
-gem install tmuxinator
 gem install solargraph
 
 laptop_echo "Installing Node..."
