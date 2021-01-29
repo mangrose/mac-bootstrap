@@ -134,6 +134,9 @@ brew "overmind"
 brew "pandoc"
 brew "perl"
 brew "pgcli"
+brew "php@7.4"
+brew "php"
+brew "brew-php-switcher"
 brew "postgresql", restart_service: true
 brew "python"
 brew "readline"
@@ -164,6 +167,8 @@ cask "docker"
 cask "vmware-fusion"
 cask "lastpass"
 cask "robo-3t"
+cask "visual-studio-code"
+cask "visual-studio"
 EOF
 
 case "$DEFAULT_SHELL" in
