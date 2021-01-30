@@ -83,6 +83,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
+tap "mongodb/brew"
 
 # Need to install openssl before libyaml
 brew "openssl"
@@ -125,7 +126,7 @@ brew "libxslt" # asdf dependency
 brew "libyaml" # asdf dependency
 brew "media-info"
 brew "memcached"
-brew "mongodb"
+brew "mongodb-community"
 brew "most"
 brew "multitail"
 brew "neovim", args: ["HEAD"]
