@@ -125,7 +125,7 @@ brew "libxslt" # asdf dependency
 brew "libyaml" # asdf dependency
 brew "media-info"
 brew "memcached"
-brew "mono"
+brew "mongodb"
 brew "most"
 brew "multitail"
 brew "neovim", args: ["HEAD"]
