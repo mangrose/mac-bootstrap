@@ -145,11 +145,11 @@ Available versions: https://semver.io/node/versions
 read -r -p "> " ASDF_NODEJS_VERSION
 export ASDF_NODEJS_VERSION=${ASDF_NODEJS_VERSION:-$DEFAULT_NODEJS_VERSION}
 
-printf "\\nWhich version of Ruby would you like to install?
-Available versions: https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/versions.txt
-(Leave blank for default: %s)\\n" "$DEFAULT_RUBY_VERSION"
-read -r -p "> " ASDF_RUBY_VERSION
-export ASDF_RUBY_VERSION=${ASDF_RUBY_VERSION:-$DEFAULT_RUBY_VERSION}
+#printf "\\nWhich version of Ruby would you like to install?
+#Available versions: https://raw.githubusercontent.com/postmodern/ruby-versions/master/ruby/versions.txt
+#(Leave blank for default: %s)\\n" "$DEFAULT_RUBY_VERSION"
+#read -r -p "> " ASDF_RUBY_VERSION
+#export ASDF_RUBY_VERSION=${ASDF_RUBY_VERSION:-$DEFAULT_RUBY_VERSION}
 
 export DEFAULT_SHELL="zsh"
 
@@ -160,7 +160,7 @@ printf "Computer name:     ==> [%s]\\n" "$COMPUTER_NAME"
 printf "Host name:         ==> [%s]\\n" "$HOST_NAME"
 printf "Time zone:         ==> [%s]\\n" "$TIME_ZONE"
 printf "Node.js version:   ==> [%s]\\n" "$ASDF_NODEJS_VERSION"
-printf "Ruby version:      ==> [%s]\\n" "$ASDF_RUBY_VERSION"
+#printf "Ruby version:      ==> [%s]\\n" "$ASDF_RUBY_VERSION"
 printf "Default shell:     ==> [%s]\\n" "$DEFAULT_SHELL"
 
 echo
